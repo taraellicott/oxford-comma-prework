@@ -9,8 +9,7 @@ def oxford_comma(array)
   elsif array.length == 2 
     "#{array[0]} and #{array[1]}"
   else array.length > 2 
-    #{array[-1]}.
-
-# string = array.split(",")
-end
+    #{array[-1]}.insert(0, "and")
+  end
+  array.join(",")
 end
